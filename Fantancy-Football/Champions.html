@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Champions League</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(16, 175, 233, 0.7);
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        header a {
+            color: #f0f0f1;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        header a:hover {
+            background-color: #f39c12;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            background-color: rgba(247, 113, 113, 0.8);
+        }
+
+        th, td {
+            border: 1px solid rgb(237, 206, 3);
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f30000;
+        }
+
+        .player-lists {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .team-list {
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(174, 231, 17, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 18%;
+        }
+
+        .team-list h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        details {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        summary {
+            font-weight: bold;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHAMPIONS LEAGUE CLASSIFICATIONS</h1>
+        <a href="home.html" style="float: right;">Home</a>
+    </header>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Team</th>
+                    <th>Position</th>
+                    <th>Points</th>
+                    <th>Goal difference</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Liverpool FC</td>
+                    <td>1</td>
+                    <td>18 ps</td>
+                    <td>+23</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Barcelona</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>+14</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arsenal</td>
+                    <td>3</td>
+                    <td>13</td>
+                    <td>+9</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bayer Leverkusen</td>
+                    <td>4</td>
+                    <td>13</td>
+                    <td>+7</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Aston Villa</td>
+                    <td>5</td>
+                    <td>13</td>
+                    <td>+6</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Player lists -->
+        <div class="player-lists">
+            <!-- Liverpool FC -->
+            <div class="team-list">
+                <h3>Liverpool FC</h3>
+                <ol>
+                    <li>
+                        <details>
+                            <summary>Mohamed Salah</summary>
+                            <p>Position: Forward<br>Goals: 20</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Virgil van Dijk</summary>
+                            <p>Position: Defender<br>Tackles: 50</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Alisson Becker</summary>
+                            <p>Position: Goalkeeper<br>Clean Sheets: 15</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Trent Alexander-Arnold</summary>
+                            <p>Position: Defender<br>Assists: 12</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Jordan Henderson</summary>
+                            <p>Position: Midfielder<br>Pass Accuracy: 90%</p>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Barcelona -->
+            <div class="team-list">
+                <h3>Barcelona</h3>
+                <ol>
+                    <li>
+                        <details>
+                            <summary>Lionel Messi</summary>
+                            <p>Position: Forward<br>Goals: 25</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Sergio Busquets</summary>
+                            <p>Position: Midfielder<br>Pass Accuracy: 92%</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Gerard Piqué</summary>
+                            <p>Position: Defender<br>Tackles: 45</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Marc-André ter Stegen</summary>
+                            <p>Position: Goalkeeper<br>Clean Sheets: 10</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Jordi Alba</summary>
+                            <p>Position: Defender<br>Assists: 10</p>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Arsenal -->
+            <div class="team-list">
+                <h3>Arsenal</h3>
+                <ol>
+                    <li>
+                        <details>
+                            <summary>Gabriel Jesus</summary>
+                            <p>Position: Forward<br>Goals: 15</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Martin Ødegaard</summary>
+                            <p>Position: Midfielder<br>Assists: 8</p>
+                        </details>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Jazmine Football Fantasy. All Rights Reserved.
+    </footer>
+</body>
+</html>

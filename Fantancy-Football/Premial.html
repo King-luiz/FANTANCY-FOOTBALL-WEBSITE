@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: hsl(154, 64%, 53%);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            background-color: #80ef0a;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #eb1e1e;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+        /* Player lists */
+        .player-lists {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .team-list {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 18%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-list h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #0073e6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        details {
+            margin-bottom: 5px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+
+        summary:hover {
+            color: #0073e6;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PREMIER LEAGUE</h1>
+    <a href="home.html">Home</a>
+</header>
+
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Team</th>
+            <th>Played</th>
+            <th>Points</th>
+            <th>Wins</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Chelsea</td>
+            <td>16</td>
+            <td>34</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nottingham Forrest</td>
+            <td>16</td>
+            <td>34</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Manchester City</td>
+            <td>14</td>
+            <td>27</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Bournemouth</td>
+            <td>15</td>
+            <td>25</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Fulham</td>
+            <td>13</td>
+            <td>24</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+</table>
+<!-- Player Lists -->
+<div class="player-lists">
+    <!-- Chelsea -->
+    <div class="team-list">
+        <h3>Chelsea</h3>
+        <ul>
+            <li>
+                <details>
+                    <summary>Cole Palmer</summary>
+                    <p>Position: Forward<br>Goals: 11</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Nicolas Jackson</summary>
+                    <p>Position: Forward<br>Goals: 9</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Enzo Fernández</summary>
+                    <p>Position: Midfielder<br>Goals: 5</p>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Nottingham Forest -->
+    <div class="team-list">
+        <h3>Nottingham Forest</h3>
+        <ul>
+            <li>
+                <details>
+                    <summary>Chris Wood</summary>
+                    <p>Position: Forward<br>Goals: 10</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Morgan Gibbs</summary>
+                    <p>Position: Midfielder<br>Goals: 4</p>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Manchester City -->
+    <div class="team-list">
+        <h3>Manchester City</h3>
+        <ul>
+            <li>
+                <details>
+                    <summary>Erling Haaland</summary>
+                    <p>Position: Midfielder<br>Assists: 5</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Phil Foden</summary>
+                    <p>Position: Midfielder<br>Goals: 6</p>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Bournemouth-->
+    <div class="team-list">
+        <h3>Bournemouth</h3>
+        <ul>
+            <li>
+                <details>
+                    <summary>Dominic Solanke</summary>
+                    <p>Position: Forward<br>Goals: 3</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Ryan Christie</summary>
+                    <p>Position: Midfielder<br>Assists: 4</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Philip Billing</summary>
+                    <p>Position: Midfielder<br>Goals: 2</p>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Fulham -->
+    <div class="team-list">
+        <h3>Fulham</h3>
+        <ul>
+            <li>
+                <details>
+                    <summary>Alex Iwobi</summary>
+                    <p>Position: Midfielder<br>Goals: 6</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Raúl Jiménez </summary>
+                    <p>Position: Forwad<br>Goals : 6</p>
+                </details>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+    &copy; 2024 Jazmine Football Fantasy. All Rights Reserved.
+</footer>
+
+</body>
+</html>

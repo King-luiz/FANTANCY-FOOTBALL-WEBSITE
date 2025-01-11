@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions League Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ec2323;
+            color: #fff;
+            text-align: center;
+            margin: 20px;
+            margin: 0;    
+        }
+        
+        header {
+            background-color: #000;
+            color: #1e07ed;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            background-color: #59f312;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+
+        
+        .container {
+            max-width: 700px;
+            margin:auto ;
+            padding: 10px;
+        }
+        
+        .results {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .match {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            margin: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        .team-container {
+            position: relative;
+        }
+        
+        .team {
+            color: rgb(231, 237, 41);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .match:hover .team {
+            transform: translateX(10px);
+        }
+        
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Champions League Results</h1>
+        <a href="home.html">Home</a>
+    </header>
+    <section class="container">
+        <div class="results">
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Monaco</span>
+                </div>
+                <span>0-4</span>
+                <div class="team-container">
+                    <span class="team">Club Brugge</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Crvena Zvezda</span>
+                </div>
+                <span>2-0</span>
+                <div class="team-container">
+                    <span class="team">Liverpool</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Atlético</span>
+                </div>
+                <span>2-0</span>
+                <div class="team-container">
+                    <span class="team">Dortmund</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Internazionale</span>
+                </div>
+                <span>1-1</span>
+                <div class="team-container">
+                    <span class="team">Barcelona</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Tottenham</span>
+                </div>
+                <span>2-1</span>
+                <div class="team-container">
+                    <span class="team">PSV</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Napoli</span>
+                </div>
+                <span>1-1</span>
+                <div class="team-container">
+                    <span class="team">Paris</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Schalke</span>
+                </div>
+                <span>2-0</span>
+                <div class="team-container">
+                    <span class="team">Galatasaray</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Porto</span>
+                </div>
+                <span>4-1</span>
+                <div class="team-container">
+                    <span class="team">Lokomotiv Moskva</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Ajax</span>
+                </div>
+                <span>4-1</span>
+                <div class="team-container">
+                    <span class="team">Napoli</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Liverpool</span>
+                </div>
+                <span>2-1</span>
+                <div class="team-container">
+                    <span class="team">Rangers</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Bayer Munich</span>
+                </div>
+                <span>2-0</span>
+                <div class="team-container">
+                    <span class="team">Viktoria Plzen</span>
+                </div>
+            </div>
+            <div class="match">
+                <div class="team-container">
+                    <span class="team">Inter Milan</span>
+                </div>
+                <span>1-0</span>
+                <div class="team-container">
+                    <span class="team">Bayern Munich</span>
+                </div>
+            </div>
+            </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jazmine Football Fantasy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
